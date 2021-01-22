@@ -1,0 +1,277 @@
+/*
+    EXTRA SMALL (col-) (VERSION MOBILE FIRST) 
+    Srictement inférieur à 576px
+*/
+
+/****************************
+CSS COMMUN
+****************************/
+*{
+    box-sizing: border-box;
+}
+
+/*enlever car pas utile modifié apres envoi eval*/
+
+/*@font-face{
+    font-family: "Arial";
+    src: local("Arial");
+}
+
+@font-face{
+    font-family: "Helvetica";
+    src: local("Helvetica");
+}*/
+
+
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.5;
+
+}
+
+h1, h2, h3, nav{
+
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+h1{
+    color:white;
+    font-size:3rem;
+    text-align:center;
+   
+}
+
+h2{
+    border-bottom: 1px solid #ae0001;
+    color: #870100;
+    font-size: 2.5rem;
+
+}
+
+h3{
+    border-bottom: 1px solid #fff;
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+
+}
+
+
+/****************************
+CSS HEADER
+****************************/
+header{
+
+    background-color: #870100;
+    border-bottom: 5px solid #600000;
+    border-top: 5px solid #600000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+header nav{
+    
+    float: right;
+    margin-top: 40px;
+    
+}
+
+header nav a{/* lien nav*/
+
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 80px;
+    padding-left: 15px;
+    
+}
+
+header a .logo-header{
+
+    border: 3px solid #fff;
+    /*modifier apres envoi eval*/
+    width: 100px;
+    padding: 5px;
+    
+
+/* animation*/
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/* animation du logo header au survol*/
+.rotate:hover .logo-header{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+
+/****************************
+CSS MAIN (INDEX)
+****************************/
+.container{
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/****************
+1ERE section
+******************/
+
+main .background-noel{/*fond noel*/
+
+   background-image: url(../img/fond-noel.jpg);
+   margin-top: 20px;
+   padding-top: 10px;
+
+}
+
+
+main section .bonhomme{/*image bonhomme neige*/
+
+    float:left;
+    margin-right: 20px;
+    height:20%;
+    width: 20%;
+
+}
+
+main .background-noel p{
+
+   color: white;
+   font-size:1.3rem;
+   text-shadow: 3px 4px 8px rgba(0,0,0,0.67);
+   text-align:left;
+
+}
+
+/*****************
+2EME section article
+**************/
+
+.container-float{/* section 1*/
+
+    padding-bottom: 20px;
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.sticker{
+
+    width:150px;
+    position: absolute;
+    left: 85%;
+
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+
+}
+
+/* animation au survol*/
+.rotate:hover .sticker{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.flex-article{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+main .flex-article article{
+
+    background-color: #870100;
+    border: 5px solid #600000;
+    color:white;
+    padding: 20px;
+    text-align: left;
+    width:23%;
+
+}
+
+/*******ZOOM IMAGE ARTICLE*********/
+
+main .zoom img{
+
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    width:100%;
+    
+}
+
+.zoom div:hover img{
+
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+/*suite article*/
+
+.flex-article .bouton{
+
+    background-color: #7ab51d;
+    border-radius: 5px;
+    color:white;
+    padding: 10px 15px;
+
+}
+
+.flex-article a{
+
+    display: block;
+    position: relative;
+    text-decoration: none;
+    text-align:center;
+}
+
+
+/****************************
+CSS FOOTER
+****************************/
+
+footer{
+
+    background-color: #ea2c2c;
+    border-bottom: 5px solid #600000;
+    border-top: 5px solid  #600000;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align:center;
+}
+
+footer p a{
+
+    color:#fff;
+}
+
+
+/****************************
+CSS MEDIA QUERIES
+****************************/
+/*SMALL (col-sm-) à partir de 576px et supérieur*/
+@media screen and (min-width:576px){
+
+}
+
+/*MEDIUM (col-md-) à partir de 768px et supérieur*/
+@media screen and (min-width:768px){
+    
+}
+
+/*LARGE (col-lg-) à partir de 992px et supérieur*/
+@media screen and (min-width:992px){
+    
+}
+
+/*EXTRA LARGE (col-xl-) à partir de 1200px et supérieur*/
+@media screen and (min-width:1200px){
+    
+}
